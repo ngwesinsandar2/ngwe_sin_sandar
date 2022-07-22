@@ -1,16 +1,7 @@
+import { Box } from '@mui/material';
 import React, { useRef } from 'react';
 import { useEffect } from 'react';
 import CursorStyle from "./cursor.module.css";
-
-// let mouseCursor = document.querySelector(".cursor_cursor__HCTH6");
-// console.log(mouseCursor)
-
-// const cursorFun = (e) => {
-//     mouseCursor.style.top = e.pageY + 'px';
-//     mouseCursor.style.left = e.pageX + 'px';
-// }
-
-// window.addEventListener("mousemove", cursorFun);
 
 const Cursor = () => {
     const cursorRef = useRef(null);
@@ -25,7 +16,7 @@ const Cursor = () => {
     }, [])
     return ( 
         <>
-            <div className={CursorStyle.cursor} ref={cursorRef} ></div>
+            <Box display={{ xs: "none", sm: "none", md: "block" }} className={CursorStyle.cursor} ref={cursorRef} ></Box>
         </>
      );
 }

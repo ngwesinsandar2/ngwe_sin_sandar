@@ -1,6 +1,7 @@
 import { Box, Grid, Link, Stack, Typography, Button } from '@mui/material';
 import { Container } from '@mui/system';
 import MyImg from "../../assests/images/homephoto1.gif";
+import MyCV from "../../assests/images/CV.pdf";
 import HomeStyle from "./home.module.css";
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -11,12 +12,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import TelegramIcon from '@mui/icons-material/Telegram';
 
-// const logo = document.querySelectorAll("svg .namePath");
-
 const Home = () => {
-    // for (let i = 0; i < logo.length; i++) {
-    //     console.log(`Letter ${i} is ${logo[i].getTotalLength()}`)
-    // }
     return ( 
         <>
             <Container maxWidth="xl" id="home">
@@ -116,7 +112,7 @@ const Home = () => {
                         </Stack>
 
                         <Stack spacing={1} mb={5}>
-                            <Stack direction="row" spacing={1}>
+                            <Stack direction="row" spacing={1} alignItems="center">
                                 <Box className={HomeStyle.emailIconCon}>
                                     <EmailIcon sx={{ fontSize: 21 }} className={HomeStyle.icon} />
                                 </Box>
@@ -131,7 +127,8 @@ const Home = () => {
                             </Stack>
                         </Stack>
 
-                        <Link href="#contact" className={HomeStyle.myLink}><Button className={HomeStyle.myBtn}>Hire Me</Button></Link>
+                        <Link href="#contact" className={HomeStyle.myLink} mr={2}><Button className={HomeStyle.myBtn}>Hire Me</Button></Link>
+                        <Link href={MyCV} download className={HomeStyle.myLink}><Button className={HomeStyle.myBtn}>Download CV</Button></Link>
                     </Grid>
 
                     <Grid item xs={12} md={5}>
