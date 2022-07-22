@@ -1,0 +1,57 @@
+.myImg {
+    width: 100%;
+}
+
+.smallTitle {
+    text-transform: uppercase;
+}
+
+.name {
+    font-weight: bolder !important;
+}
+
+.iconCon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.icon {
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.iconCon:hover {
+    background-color: #ffe4e1b0;
+}
+
+.skillCon {
+    background-color: var(--secondary);
+    width: 170px;
+    height: 40px;
+    padding: 4px 0 0 7px;
+    border-radius: 5px;
+}
+
+.skillImg {
+    width: 30px;
+    height: 30px;
+}
+
+.skill {
+    color: var(--primary);
+}
+
+/* Responsive */
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .gridCon {
+        height: 900px;
+    }
+}

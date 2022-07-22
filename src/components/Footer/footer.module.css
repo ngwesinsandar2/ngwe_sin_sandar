@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.myDivider {
+    border-color: var(--secondary) !important;
+}
+
+.logo{
+    font-family: 'Kalam', cursive !important;
+}
+
+.footerLetterTitle {
+    font-weight: bold !important;
+    letter-spacing: 3px !important;
+}
+
+.iconCon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.iconLink {
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.icon {
+    color: var(--primary);
+}
+
+.iconCon:hover {
+    background-color: #ffe4e18e;
+}
+
+.gridCon {
+    height: 470px;
+}
+
+/* Responsive */
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .gridCon {
+        height: 350px;
+    }
+}
+

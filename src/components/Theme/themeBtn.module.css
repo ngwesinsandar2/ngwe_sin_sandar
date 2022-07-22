@@ -1,0 +1,19 @@
+.btnCon {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffbdb6;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%), 0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
+    border-radius: 50%;
+    color: var(--primary);
+    /* cursor: pointer; */
+    transition: .5s;
+}
+
+.btnCon:hover {
+    background-color: #ffe4e18e;
+}

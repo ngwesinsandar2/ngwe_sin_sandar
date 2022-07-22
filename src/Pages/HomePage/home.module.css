@@ -1,0 +1,177 @@
+.myImg {
+    width: 100%;
+    border-radius: 7px;
+}
+
+.name {
+    font-weight: bolder !important;
+    text-transform: uppercase;
+}
+
+.namePath1 {
+    stroke-dasharray: 285;
+    stroke-dashoffset: 284;
+    animation: line-ani 2s ease forwards;
+}
+
+.namePath2 {
+    stroke-dasharray: 286;
+    stroke-dashoffset: 286;
+    animation: line-ani 2s ease forwards .2s;
+}
+
+.namePath3 {
+    stroke-dasharray: 377;
+    stroke-dashoffset: 377;
+    animation: line-ani 2s ease forwards .3s;
+}
+
+.namePath4 {
+    stroke-dasharray: 261;
+    stroke-dashoffset: 261;
+    animation: line-ani 2s ease forwards .4s;
+}
+
+.namePath5 {
+    stroke-dasharray: 261;
+    stroke-dashoffset: 261;
+    animation: line-ani 2s ease forwards .5s;
+}
+
+.namePath6 {
+    stroke-dasharray: 123;
+    stroke-dashoffset: 123;
+    animation: line-ani 2s ease forwards .6s;
+}
+
+.namePath7 {
+    stroke-dasharray: 284;
+    stroke-dashoffset: 284;
+    animation: line-ani 2s ease forwards .7s;
+}
+
+.namePath8 {
+    stroke-dasharray: 261;
+    stroke-dashoffset: 261;
+    animation: line-ani 2s ease forwards .8s;
+}
+
+.namePath9 {
+    stroke-dasharray: 298;
+    stroke-dashoffset: 298;
+    animation: line-ani 2s ease forwards .9s;
+}
+
+.namePath10 {
+    stroke-dasharray: 284;
+    stroke-dashoffset: 284;
+    animation: line-ani 2s ease forwards 1s;
+}
+
+.namePath11 {
+    stroke-dasharray: 264;
+    stroke-dashoffset: 264;
+    animation: line-ani 2s ease forwards 1.1s;
+}
+
+.namePath12 {
+    stroke-dasharray: 298;
+    stroke-dashoffset: 298;
+    animation: line-ani 2s ease forwards 1.2s;
+}
+
+.namePath13 {
+    stroke-dasharray: 324;
+    stroke-dashoffset: 324;
+    animation: line-ani 2s ease forwards 1.3s;
+}
+
+@keyframes line-ani {
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes fill-ani {
+    from{
+        fill: transparent;
+    }
+
+    to{
+        fill: var(--secondary);
+    }
+}
+
+.smallTitle {
+    text-transform: uppercase;
+}
+
+.iconCon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.iconLink {
+    text-decoration: none;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+}
+
+.icon {
+    color: var(--primary);
+}
+
+.iconCon:hover {
+    background-color: #ffe4e18e;
+}
+
+.emailIconCon, .phIconCon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.email, .phone {
+    color: var(--secondary) !important;
+    text-decoration: none !important;
+    transition: .3s;
+}
+
+.email:hover, .phone:hover {
+    color: #ffe4e18e !important;
+}
+
+.myLink {
+    text-decoration: none !important;
+}
+
+.myBtn {
+    background-color: var(--secondary) !important;
+    color: var(--primary) !important;
+    text-transform: none !important;
+    border-radius: 7px !important;
+    cursor: none !important;
+}
+
+.myBtn:hover {
+    background-color: #ffe4e18e !important;
+}
+
+/* Responsive */
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .gridCon {
+        height: 1000px;
+    }
+}

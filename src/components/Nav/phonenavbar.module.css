@@ -1,0 +1,43 @@
+.menuBarCon {
+    background-color: var(--secondary);
+    padding: 0;
+}
+
+.menuBar div {
+    justify-content: center;
+}
+
+.myLink {
+    text-decoration: none !important;
+    color: var(--primary) !important;
+}
+
+.menuIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.menuIcon div {
+    height: 4px;
+    background-color: var(--primary);
+    border-radius: 25px;
+    transition: .5s;
+}
+
+.menuIcon div:nth-child(1) {
+    width: 25px;
+    transform: translateY(-6px);
+}
+
+.menuIcon div:nth-child(2) {
+    width: 40px;
+}
+
+.menuIcon div:nth-child(3) {
+    width: 30px;
+    transform: translateY(6px);
+}

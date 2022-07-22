@@ -1,0 +1,36 @@
+.smallTitle {
+    text-transform: uppercase;
+}
+
+.title {
+    font-weight: bolder !important;
+}
+
+.iconCon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon {
+    color: var(--secondary);
+}
+
+.serviceCard {
+    padding: 20px;
+    background-color: var(--secondary) !important;
+    color: var(--primary) !important;
+    border-radius: 7px !important;
+}
+
+/* Responsive */
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .gridCon {
+        height: 800px;
+    }
+}

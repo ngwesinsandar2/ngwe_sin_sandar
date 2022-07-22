@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+.logo{
+    font-family: 'Kalam', cursive !important;
+    color: var(--secondary);
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.myAppbar {
+    background: var(--primary) !important;
+    box-shadow: var(--primary) 0px 3px 3px -2px, rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px !important;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.myLink {
+    color: var(--secondary);
+    transition: .3s;
+}
+
+.myLink:hover {
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+    background-color: transparent !important;
+}
+
+.active {
+    color: var(--secondary) !important;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
