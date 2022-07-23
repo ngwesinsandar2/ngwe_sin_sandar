@@ -47,7 +47,7 @@ const projectData = [
 
 const Projects = () => {
     return ( 
-        <div id="portfolio">
+        <div id="portfolio" name="portfolio">
         <Container maxWidth="xl">
 
             <Grid container alignItems="center" className={ProjectsStyle.gridCon} pt={{xs: 10, sm: 10, md: 0}}>

@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import Fade from '@mui/material/Fade';
+import { Link } from "react-scroll";
 
 function ScrollTop(props) {
     const { children, window } = props;
@@ -31,7 +32,7 @@ function ScrollTop(props) {
         <Box
           onClick={handleClick}
           role="presentation"
-          sx={{ position: 'fixed', bottom: 15, right: 20, "&:hover": { backgroundColor: "#ffe4e18e" } }}
+          sx={{ position: 'fixed', bottom: 15, right: 20 }}
         >
           {children}
         </Box>
@@ -48,9 +49,11 @@ const ScrollToTopBtn = (props) => {
     return ( 
         <>
             <ScrollTop {...props}>
+              <Link to="home" spy={true} smooth={true} duration={500} offset={-70}>
                 <Fab size="small" aria-label="scroll back to top" style={{cursor: "none", width: "50px", height: "50px", borderRadius: "50%", backgroundColor: '#ffbdb6'}}>
                     <KeyboardArrowUpIcon style={{color: "var(--primary)"}} />
                 </Fab>
+              </Link>
             </ScrollTop>
         </>
      );

@@ -49,7 +49,7 @@ const serviceData = [
 
 const Services = () => {
     return ( 
-        <div id="service">
+        <div id="service" name="service">
             <Container maxWidth="xl">
 
                 <Grid container alignItems="center" className={ServicesStyle.gridCon} pt={{xs: 10, sm: 10, md: 0}}>
@@ -66,7 +66,7 @@ const Services = () => {
                                 serviceData.map((sd, index) => {
                                     return(
                                         <Grid item key={index} xs={12} sm={6} md={4}>
-                                            <Card variant="outlined" className={ServicesStyle.serviceCard}>
+                                            <Card className={ServicesStyle.serviceCard}>
                                                 <Box className={ServicesStyle.iconCon} mb={1}>
                                                     <sd.serviceIcon sx={{ fontSize: 30 }} className={ServicesStyle.icon} />
                                                 </Box>

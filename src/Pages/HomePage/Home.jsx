@@ -15,7 +15,7 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 const Home = () => {
     return ( 
         <>
-            <Container maxWidth="xl" id="home">
+            <Container maxWidth="xl" id="home" name="home">
                 <Grid container pt={{xs: 15, sm: 10, md: 0}} spacing={3} direction={{ xs: 'column', md: 'row' }} justifyContent="center" alignItems={{ xs: 'flex-start', lg: "center" }} className={HomeStyle.gridCon}>
 
                     <Grid item xs={12} md={5}>

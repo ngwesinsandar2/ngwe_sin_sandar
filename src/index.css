@@ -2,7 +2,6 @@
 
 :root {
     --primary: #D46868;
-    /* --secondary: #FFE4E1; */
     --secondary: #FFCAC6;
 }
 
@@ -23,10 +22,6 @@
     color: var(--secondary);
     transition: .5s;
 }
-
-/* html {
-    scroll-behavior: smooth;
-} */
 
 html, body {
     max-width: 100%;

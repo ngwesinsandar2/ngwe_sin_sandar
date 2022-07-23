@@ -74,15 +74,15 @@ const About = () => {
                         <Typography variant="h5" className={AboutStyle.name}>My name is Ngwe Sin Sandar and <br /> I'm a front-end developer</Typography>
                         <Typography variant="body2" mb={3} className={AboutStyle.develop}>I'm a front-end developer from <b>Myanmar</b> who is comfortable working with React and responsive web design to deliver exceptional customer experience. <br /> I'm 18years old and I've finished matriculation. I'm available for freelance.</Typography>
 
-                        <Typography variant="h6" className={AboutStyle.follow}>What Skills I Have</Typography>
+                        <Typography variant="h6" className={AboutStyle.skillTitle}>What Skills I Have</Typography>
                         <Stack>
                             <Box>
                                 <Typography variant="body2" gutterBottom className={AboutStyle.skillTitle}>Web Design</Typography>
-                                <Stack direction="row" mb={1} flexWrap="wrap">
+                                <Stack direction="row" mb={2} flexWrap="wrap">
                                     {
                                         designSkill.map(d => {
                                             return(
-                                                <Stack key={d.id} spacing={1} direction="row" alignItems="center" className={AboutStyle.skillCon} mb={1} mr={1}>
+                                                <Stack key={d.id} justifyContent="center" alignItems="center" className={AboutStyle.skillCon} mr={1}>
                                                     <Box className={AboutStyle.skillImgCon}>
                                                         <img src={d.skillImg} alt="photoshop" className={AboutStyle.skillImg} />
                                                     </Box>
@@ -98,7 +98,7 @@ const About = () => {
                                     {
                                         frontendSkill.map(d => {
                                             return(
-                                                <Stack key={d.id} spacing={1} direction="row" alignItems="center" className={AboutStyle.skillCon} mb={1} mr={1}>
+                                                <Stack key={d.id} justifyContent="center" alignItems="center" className={AboutStyle.skillCon} mb={1} mr={1}>
                                                     <Box className={AboutStyle.skillImgCon}>
                                                         <img src={d.skillImg} alt="photoshop" className={AboutStyle.skillImg} />
                                                     </Box>

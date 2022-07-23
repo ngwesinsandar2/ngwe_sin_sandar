@@ -22,9 +22,10 @@
 
 .serviceCard {
     padding: 20px;
-    background-color: var(--secondary) !important;
     color: var(--primary) !important;
     border-radius: 7px !important;
+    box-shadow: var(--primary) 0px 3px 3px -2px, rgb(0 0 0 / 10%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px !important;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4)) !important;
 }
 
 /* Responsive */

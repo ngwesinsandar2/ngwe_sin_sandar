@@ -30,17 +30,20 @@
     background-color: #ffe4e1b0;
 }
 
+.skillTitle {
+    font-weight: bold !important;
+}
+
 .skillCon {
     background-color: var(--secondary);
-    width: 170px;
-    height: 40px;
-    padding: 4px 0 0 7px;
+    width: 110px;
+    height: 90px;
     border-radius: 5px;
 }
 
 .skillImg {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .skill {
@@ -48,7 +51,6 @@
 }
 
 /* Responsive */
-
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .gridCon {

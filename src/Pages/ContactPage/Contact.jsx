@@ -4,14 +4,14 @@ import { Container } from '@mui/system';
 import ContactStyle from "./contact.module.css";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
-import ChatIcon from '@mui/icons-material/Chat';
 import { useRef } from 'react';
 import emailjs from "emailjs-com";
 import { useState } from 'react';
+import { SiMessenger } from 'react-icons/si';
 
 const social = [
     {
-        contactIcon: ChatIcon,
+        contactIcon: SiMessenger,
         linkHref: "https://m.me/profile.php?id=100052980773543",
         linkTitle: "Messenger",
     },
@@ -49,7 +49,7 @@ const Contact = () => {
     };
 
     return ( 
-        <div id="contact">
+        <div id="contact" name="contact">
             <Container maxWidth="xl">
                 <Grid container justifyContent="center" alignItems="center" className={ContactStyle.gridCon} py={{xs: 10, sm: 10, md: 0}}>
                     <Box>
