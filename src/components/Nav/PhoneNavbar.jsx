@@ -7,31 +7,32 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import PhNavStyle from "./phonenavbar.module.css";
-import { Link } from '@mui/material';
+// import { Link } from '@mui/material';
+import { Link } from "react-scroll";
 
 const pages = [
     {
-        idHref: "#home",
+        idHref: "home",
         navigation: "<Home />",
     },
 
     {
-        idHref: "#about",
+        idHref: "about",
         navigation: "<AboutMe />",
     },
 
     {
-        idHref: "#portfolio",
+        idHref: "portfolio",
         navigation: "<Portfolio />",
     },
 
     {
-        idHref: "#service",
+        idHref: "service",
         navigation: "<Services />",
     },
 
     {
-        idHref: "#contact",
+        idHref: "contact",
         navigation: "<ContactMe />",
     },
 ]
@@ -60,7 +61,8 @@ export default function PhoneNavbar() {
         {pages.map((text, index) => (
           <ListItem key={index} disablePadding className={PhNavStyle.menuBar}>
             <ListItemButton>
-                <Link className={PhNavStyle.myLink} href={text.idHref}> <ListItemText primary={text.navigation} /> </Link>
+                {/* <Link className={PhNavStyle.myLink} href={text.idHref}> <ListItemText primary={text.navigation} /> </Link> */}
+                <Link key={index} to={text.idHref} activeClass={PhNavStyle.active} spy={true} smooth={true} duration={500} offset={-70} className={PhNavStyle.myLink}> { text.navigation } </Link>
             </ListItemButton>
           </ListItem>
         ))}
