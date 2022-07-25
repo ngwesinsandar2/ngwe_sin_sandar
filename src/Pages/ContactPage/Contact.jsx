@@ -45,7 +45,7 @@ const Contact = () => {
 
         e.target.reset()
 
-        setReply("Thanks, I will reply as soon as possible!")
+        setReply("Thanks, I will reply as soon as possible^^")
     };
 
     return ( 
