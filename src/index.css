@@ -3,6 +3,7 @@
 :root {
     --primary: #D46868;
     --secondary: #FFCAC6;
+    --third: #FFE4E1;
 }
 
 [data-theme="dark"] {

@@ -36,7 +36,7 @@
     color: var(--secondary) !important;
     text-decoration: none !important;
     transition: .3s;
-    font-size: 25   px;
+    font-size: 25px;
 }
 
 .contactLink:hover {
@@ -62,11 +62,12 @@
 }
 
 .myBtn {
-    background-color: var(--secondary) !important;
+    background-color: var(--third) !important;
     color: var(--primary) !important;
     text-transform: none !important;
     border-radius: 7px !important;
     cursor: none !important;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px !important;
 }
 
 .myBtn:hover {
