@@ -16,7 +16,7 @@ const Cursor = () => {
     }, [])
     return ( 
         <>
-            <Box display={{ xs: "none", sm: "none", md: "block" }} className={CursorStyle.cursor} ref={cursorRef} ></Box>
+            <Box className={CursorStyle.cursor} ref={cursorRef} ></Box>
         </>
      );
 }
