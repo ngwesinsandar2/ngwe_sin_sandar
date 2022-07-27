@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ngwe_sin_sandar/static/css/main.d944c135.css",
-    "main.js": "/ngwe_sin_sandar/static/js/main.83807d1f.js",
+    "main.js": "/ngwe_sin_sandar/static/js/main.f89e1f2d.js",
     "static/media/CV.pdf": "/ngwe_sin_sandar/static/media/CV.850c6150ff39dd964485.pdf",
     "static/media/homephoto1.gif": "/ngwe_sin_sandar/static/media/homephoto1.e020dcb60b4426623c65.gif",
     "static/media/project1.png": "/ngwe_sin_sandar/static/media/project1.484631ef92be257f8baa.png",
@@ -18,10 +18,10 @@
     "static/media/js.png": "/ngwe_sin_sandar/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/ngwe_sin_sandar/index.html",
     "main.d944c135.css.map": "/ngwe_sin_sandar/static/css/main.d944c135.css.map",
-    "main.83807d1f.js.map": "/ngwe_sin_sandar/static/js/main.83807d1f.js.map"
+    "main.f89e1f2d.js.map": "/ngwe_sin_sandar/static/js/main.f89e1f2d.js.map"
   },
   "entrypoints": [
     "static/css/main.d944c135.css",
-    "static/js/main.83807d1f.js"
+    "static/js/main.f89e1f2d.js"
   ]
 }
