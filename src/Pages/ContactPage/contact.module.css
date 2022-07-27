@@ -32,7 +32,7 @@
     color: var(--secondary) !important;
     text-decoration: none !important;
     transition: .3s;
-    font-size: 21px;
+    font-size: 20px;
 }
 
 .contactLink:hover {

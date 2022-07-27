@@ -10,31 +10,6 @@
     width: 100%;
     height: 100%;
     border-radius: 7px;
-    transition: .2s ease-in-out;
-}
-
-.imageHoverBox {
-    width: 100%;
-    height: 98%;
-    position: absolute;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #737373c3;
-    color: var(--secondary);
-    border-radius: 7px;
-    font-weight: bold;
-    transition: .2s ease-in-out;
-}
-
-.projectImgCon .imageHoverBox.fade {
-    opacity: 0;
-}
-
-.projectImgCon:hover .imageHoverBox.fade {
-    opacity: 1;
 }
 
 .myLink {

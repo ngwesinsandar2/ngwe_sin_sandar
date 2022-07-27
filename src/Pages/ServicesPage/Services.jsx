@@ -43,7 +43,7 @@ const serviceData = [
     {
         serviceIcon: AccessTimeFilledIcon,
         cardTitle: "Time Management",
-        cardBody: "Manage tasks to finish them in time. lorem lorem lorem lorem",
+        cardBody: "Manage tasks to finish them in time.",
     },
 ]
 

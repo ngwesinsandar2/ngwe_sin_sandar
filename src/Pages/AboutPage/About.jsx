@@ -77,12 +77,12 @@ const About = () => {
                         <Typography variant="h6" className={AboutStyle.skillTitle}>What Skills I Have</Typography>
                         <Stack>
                             <Box>
-                                <Typography variant="body2" gutterBottom className={AboutStyle.skillTitle}>Web Design</Typography>
+                                <Typography variant="body2" gutterBottom className={AboutStyle.skillTitle}>Web Design Software Skills</Typography>
                                 <Stack direction="row" mb={2} flexWrap="wrap">
                                     {
                                         designSkill.map(d => {
                                             return(
-                                                <Stack key={d.id} justifyContent="center" alignItems="center" className={AboutStyle.skillCon} mr={1}>
+                                                <Stack key={d.id} justifyContent="center" alignItems="center" className={AboutStyle.skillCon} mb={1} mr={1}>
                                                     <Box className={AboutStyle.skillImgCon}>
                                                         <img src={d.skillImg} alt="photoshop" className={AboutStyle.skillImg} />
                                                     </Box>
@@ -93,7 +93,7 @@ const About = () => {
                                     }
                                 </Stack>
 
-                                <Typography variant="body2" gutterBottom className={AboutStyle.skillTitle}>Front-End Development</Typography>
+                                <Typography variant="body2" gutterBottom className={AboutStyle.skillTitle}>Front-End Development Software Skills</Typography>
                                 <Stack direction="row" flexWrap="wrap">
                                     {
                                         frontendSkill.map(d => {

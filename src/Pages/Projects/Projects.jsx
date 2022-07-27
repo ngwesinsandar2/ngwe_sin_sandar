@@ -64,21 +64,23 @@ const Projects = () => {
                             projectData.map((pd, index) => {
                                 return(
                                     <Grid item key={index} xs={12} md={6}>
-                                        <Grid container alignItems="center" spacing={2}>
+                                        <Grid container alignItems="center">
                                             <Grid item md={8}>
-                                                <Box className={ProjectsStyle.projectImgCon} position="relative">
-                                                    <img src={ pd.projectImg } className={ProjectsStyle.projectImg} alt="" /> 
-                                                    <Link href={ pd.projectLink } target="_blank" className={ProjectsStyle.myLink}> 
-                                                        <Box className={`${ProjectsStyle.imageHoverBox} ${ProjectsStyle.fade}`}>{pd.demoText}</Box>
-                                                    </Link>
-                                                </Box>
+                                                <img src={ pd.projectImg } className={ProjectsStyle.projectImg} alt="projectImg" />
                                             </Grid>
 
-                                            <Grid item md={4}>
-                                                <Box>
-                                                    <Typography variant="h6" className={ProjectsStyle.title}> { pd.projectTitle } </Typography>
-                                                    <Typography gutterBottom variant="body2"> { pd.projectBody } </Typography>
-                                                    <Link href={ pd.sourceCode } className={ProjectsStyle.myLink}><Button className={ProjectsStyle.myBtn}>Source Code</Button></Link>
+                                            <Grid item md={4} spacing={3}>
+                                                <Typography variant="h6" className={ProjectsStyle.title}> { pd.projectTitle } </Typography>
+                                                <Typography gutterBottom variant="body2"> { pd.projectBody } </Typography>
+                                                <Box display={{xs: "inline", sm: "inline", lg: "block"}} mb={1}>
+                                                    <Link href={ pd.sourceCode } className={ProjectsStyle.myLink} mr={2}>
+                                                        <Button className={ProjectsStyle.myBtn}>Source Code</Button>
+                                                    </Link>
+                                                </Box>
+                                                <Box display={{xs: "inline", sm: "inline", lg: "block"}}>
+                                                    <Link href={ pd.projectLink } target="_blank" className={ProjectsStyle.myLink}> 
+                                                        <Button className={ProjectsStyle.myBtn}>{pd.demoText}</Button>
+                                                    </Link>
                                                 </Box>
                                             </Grid>
                                         </Grid>
