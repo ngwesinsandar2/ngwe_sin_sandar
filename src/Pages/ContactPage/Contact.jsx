@@ -49,50 +49,48 @@ const Contact = () => {
     };
 
     return ( 
-        <div id="contact" name="contact">
-            <Container maxWidth="xl">
+        <>
+            <Container maxWidth="xl" id="contact" name="contact">
                 <Grid container justifyContent="center" alignItems="center" className={ContactStyle.gridCon} py={{xs: 10, sm: 10, md: 0}}>
-                    <Box>
 
-                        <Stack textAlign="center" mb={5}>
-                            <Typography variant="subtitle2" gutterBottom className={ContactStyle.smallTitle}>&lt;ContactMe /&gt;</Typography>
-                            <Typography variant="h5" className={ContactStyle.name}>Get In Touch</Typography>
-                        </Stack>
+                    <Stack textAlign="center" mb={5}>
+                        <Typography variant="subtitle2" gutterBottom className={ContactStyle.smallTitle}>&lt;ContactMe /&gt;</Typography>
+                        <Typography variant="h5" className={ContactStyle.name}>Get In Touch</Typography>
+                    </Stack>
 
-                        <Grid container direction="row" spacing={{ xs: 5 }} justifyContent="center" alignItems="center">
+                    <Grid container direction="row" spacing={{ xs: 5 }} justifyContent="center" alignItems="center">
 
-                            <Grid item xs={12} md={6}>
-                                <Stack spacing={3}>
-                                    {social.map((s, index) => {
-                                        return(
-                                            <Stack key={index} direction="row" alignItems="center" spacing={2}>
-                                                <Box className={ContactStyle.contactIconCon}>
-                                                    <s.contactIcon sx={{ fontSize: 30 }} className={ContactStyle.icon} />
-                                                </Box>
-                                                <Link href={s.linkHref} className={ContactStyle.contactLink}>{s.linkTitle}</Link>
-                                            </Stack>
-                                        )
-                                    })}
-                                </Stack>
-                            </Grid>
-
-                            <Grid item md={6}>
-                                <form ref={form} onSubmit={sendEmail}>
-                                    <TextField className={ContactStyle.contactInput} name="name" type="text" required fullWidth label="Name" variant="standard" />
-                                    <TextField className={ContactStyle.contactInput} name="email" type="email" required fullWidth label="Email" variant="standard" />
-                                    <TextField className={ContactStyle.contactInput} name="subject" type="text" fullWidth label="Subject" variant="standard" />
-                                    <TextField className={ContactStyle.contactInput} name="message" fullWidth multiline rows={5} label="Message" variant="standard" />
-                                    <Button type="submit" className={ContactStyle.myBtn}>Send Message</Button>
-                                </form>
-                                <Typography mt={3}>{reply}</Typography>
-                            </Grid>
-                        
+                        <Grid item xs={12} md={6}>
+                            <Stack spacing={3}>
+                                {social.map((s, index) => {
+                                    return(
+                                        <Stack key={index} direction="row" alignItems="center" spacing={1}>
+                                            <Box className={ContactStyle.contactIconCon}>
+                                                <s.contactIcon sx={{ fontSize: 30 }} className={ContactStyle.icon} />
+                                            </Box>
+                                            <Link href={s.linkHref} className={ContactStyle.contactLink}>{s.linkTitle}</Link>
+                                        </Stack>
+                                    )
+                                })}
+                            </Stack>
                         </Grid>
 
-                    </Box>
+                        <Grid item md={6}>
+                            <form ref={form} onSubmit={sendEmail}>
+                                <TextField className={ContactStyle.contactInput} name="name" type="text" required fullWidth label="Name" variant="standard" />
+                                <TextField className={ContactStyle.contactInput} name="email" type="email" required fullWidth label="Email" variant="standard" />
+                                <TextField className={ContactStyle.contactInput} name="subject" type="text" fullWidth label="Subject" variant="standard" />
+                                <TextField className={ContactStyle.contactInput} name="message" fullWidth multiline rows={5} label="Message" variant="standard" />
+                                <Button type="submit" className={ContactStyle.myBtn}>Send Message</Button>
+                            </form>
+                            <Typography mt={3}>{reply}</Typography>
+                        </Grid>
+                    
+                    </Grid>
+
                 </Grid>
             </Container>
-        </div>
+        </>
      );
 }
  
