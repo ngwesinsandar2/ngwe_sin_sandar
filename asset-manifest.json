@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ngwe_sin_sandar/static/css/main.dddf1dd8.css",
-    "main.js": "/ngwe_sin_sandar/static/js/main.0bd47d34.js",
+    "main.css": "/ngwe_sin_sandar/static/css/main.bbedbf84.css",
+    "main.js": "/ngwe_sin_sandar/static/js/main.5b79237b.js",
     "static/media/CV.pdf": "/ngwe_sin_sandar/static/media/CV.850c6150ff39dd964485.pdf",
     "static/media/homephoto1.gif": "/ngwe_sin_sandar/static/media/homephoto1.e020dcb60b4426623c65.gif",
     "static/media/project1.png": "/ngwe_sin_sandar/static/media/project1.484631ef92be257f8baa.png",
@@ -17,11 +17,11 @@
     "static/media/css-3.png": "/ngwe_sin_sandar/static/media/css-3.463e319bad8e0edf1ef7.png",
     "static/media/js.png": "/ngwe_sin_sandar/static/media/js.3dfb665e058d08c99f28.png",
     "index.html": "/ngwe_sin_sandar/index.html",
-    "main.dddf1dd8.css.map": "/ngwe_sin_sandar/static/css/main.dddf1dd8.css.map",
-    "main.0bd47d34.js.map": "/ngwe_sin_sandar/static/js/main.0bd47d34.js.map"
+    "main.bbedbf84.css.map": "/ngwe_sin_sandar/static/css/main.bbedbf84.css.map",
+    "main.5b79237b.js.map": "/ngwe_sin_sandar/static/js/main.5b79237b.js.map"
   },
   "entrypoints": [
-    "static/css/main.dddf1dd8.css",
-    "static/js/main.0bd47d34.js"
+    "static/css/main.bbedbf84.css",
+    "static/js/main.5b79237b.js"
   ]
 }
